@@ -1,4 +1,5 @@
 <resources>
+<!-- Theeban -->
     <string name="app_name">Royal Kitchen</string>
     <string name="view_booking">View Booking</string>
     <string name="home_work_place">Work Place</string>
