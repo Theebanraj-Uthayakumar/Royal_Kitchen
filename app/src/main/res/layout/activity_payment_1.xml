@@ -47,7 +47,7 @@
             android:layout_marginRight="88dp"
             android:fontFamily="@font/open_sans"
             android:freezesText="false"
-            android:text="Booking Details"
+            android:text="@string/payment_booking_details"
             android:textColor="#D8A016"
             android:textSize="30sp" />
 
@@ -67,7 +67,7 @@
             android:layout_marginRight="43dp"
             android:backgroundTint="#D8A016"
             android:ems="10"
-            android:hint="Card Number"
+            android:hint="@string/payment_card_number"
             android:inputType="number"
             android:textColor="#6E6E6E"
             android:textColorHint="#454545" />
@@ -87,7 +87,7 @@
             android:layout_marginEnd="43dp"
             android:layout_marginRight="43dp"
             android:ems="10"
-            android:hint="Name on Card"
+            android:hint="@string/payment_name_on_card"
             android:inputType="textPersonName"
             android:backgroundTint="#D8A016"
             android:textColor="#454545"
@@ -109,7 +109,7 @@
             android:layout_marginRight="43dp"
             android:backgroundTint="#D8A016"
             android:ems="10"
-            android:hint="Card Type"
+            android:hint="@string/payment_card_type"
             android:inputType="textPersonName"
             android:textColor="#454545"
             android:textColorHint="#454545" />
@@ -130,7 +130,7 @@
             android:layout_marginRight="43dp"
             android:backgroundTint="#D8A016"
             android:ems="10"
-            android:hint="Card Expiry"
+            android:hint="@string/payment_card_expiry"
             android:inputType="date"
             android:textColor="#454545"
             android:textColorHint="#454545" />
@@ -151,7 +151,7 @@
             android:layout_marginRight="43dp"
             android:backgroundTint="#D8A016"
             android:ems="10"
-            android:hint="CVC Number"
+            android:hint="@string/payment_cvc_number"
             android:inputType="textPersonName"
             android:textColor="#454545"
             android:textColorHint="#454545" />
@@ -170,7 +170,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginEnd="130dp"
             android:layout_marginRight="130dp"
-            android:text="Pay Now"
+            android:text="@string/payment_pay_now"
             app:backgroundTint="#D8A016" />
     </RelativeLayout>
 </ScrollView>

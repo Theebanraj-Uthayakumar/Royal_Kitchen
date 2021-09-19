@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity14">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="411dp"
+        android:layout_height="197dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:hint="@string/t1"
+            android:textColorHint="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="235dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/t2"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="235dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="60dp"
+            android:hint="@string/t3"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="235dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="90dp"
+            android:hint="@string/t4"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="117dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="120dp"
+            android:hint="@string/t5"
+            android:textColorHint="#000000" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="124dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/rectangle_30" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="37dp"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="10dp"
+            tools:srcCompat="@drawable/group_30" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            tools:srcCompat="@drawable/rectangle_54" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="28dp"
+            android:layout_height="26dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="12dp"
+            tools:srcCompat="@drawable/untitled" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="150dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/t6"
+        android:textColorHint="#000000"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:hint="@string/t8"
+        android:textColorHint="#FFC107"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:hint="@string/t9"
+        android:textColorHint="#FFC107"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:layout_width="396dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginBottom="44dp"
+        android:hint="@string/next1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

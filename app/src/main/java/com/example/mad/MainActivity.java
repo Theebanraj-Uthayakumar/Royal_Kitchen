@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this, View_Booking_Client.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity7.class);
                 startActivity(intent);
                 finish();
 
