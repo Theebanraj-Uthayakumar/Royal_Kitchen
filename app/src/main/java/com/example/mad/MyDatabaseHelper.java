@@ -1,8 +1,10 @@
 package com.example.mad;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -30,6 +32,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         this.context = context;
     }
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         String query = "CREATE TABLE " + TABLE_NAME + "(" +
@@ -48,5 +51,23 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
+    }
+
+    void Booking(String checkin_date, String checkin_time, int numberofcabin, String email, int number){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(COLUMN_CHECK_IN_DATE,checkin_date);
+        cv.put(COLUMN_CHECK_IN_TIME,checkin_time);
+        cv.put(COLUMN_NUMBER_OF_CABINS,numberofcabin);
+        cv.put(COLUMN_EMAIL,email);
+        cv.put(COLUMN_MOBILE_NUMBER,number);
+
+        long result = db.insert(TABLE_NAME,null,cv);
+        if(result == -1){
+            Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(context, "Your data successfully added!", Toast.LENGTH_SHORT).show();
+        }
     }
 }
