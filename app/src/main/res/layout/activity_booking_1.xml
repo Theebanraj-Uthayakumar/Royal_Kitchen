@@ -9,6 +9,8 @@
     android:fillViewport="true"
     android:background="@drawable/booking_back_img_1">
 
+<!--    NEW-->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
