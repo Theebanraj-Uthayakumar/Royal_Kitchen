@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity7 extends AppCompatActivity {
 
+    //BUTTON
     private Button Button01;
     private Button Button02;
     private Button button25;
