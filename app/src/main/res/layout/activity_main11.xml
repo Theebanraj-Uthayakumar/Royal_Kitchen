@@ -10,14 +10,40 @@
         android:id="@+id/imageView3"
         android:layout_width="460dp"
         android:layout_height="568dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginRight="156dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:layout_marginBottom="260dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262"
         app:srcCompat="@drawable/ellipse_9" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Booking_1">
+
+        <ImageButton
+            android:id="@+id/imageButton67"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="312dp"
+            android:layout_marginRight="312dp"
+            app:srcCompat="@drawable/back_but"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textView6"
@@ -113,32 +139,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.936" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="28dp"
-        android:layout_height="27dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064"
-        app:srcCompat="@drawable/ellipse_11"
-        android:contentDescription="@string/todo" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="9dp"
-        android:layout_height="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077"
-        app:srcCompat="@drawable/vector"
-        android:contentDescription="@string/todo" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress1"

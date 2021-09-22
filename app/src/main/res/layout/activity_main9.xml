@@ -16,45 +16,31 @@
         app:srcCompat="@drawable/rectangle_42"
         android:contentDescription="@string/todo" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="28dp"
-        android:layout_height="27dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031"
-        app:srcCompat="@drawable/ellipse_11"
-        android:contentDescription="@string/todo" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Booking_1">
 
-    <ImageView
-        android:id="@+id/imageView176"
-        android:layout_width="9dp"
-        android:layout_height="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045"
-        app:srcCompat="@drawable/vector"
-        tools:ignore="ImageContrastCheck"
-        android:contentDescription="@string/todo" />
+        <ImageButton
+            android:id="@+id/imageButton676"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="316dp"
+            android:layout_marginRight="316dp"
+            app:srcCompat="@drawable/back_but"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="16dp" />
 
-    <ImageView
-        android:id="@+id/imageView131"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.478"
-        app:srcCompat="@drawable/heart"
-        android:contentDescription="@string/todo" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textView12"
