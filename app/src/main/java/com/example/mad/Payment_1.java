@@ -16,17 +16,17 @@ public class Payment_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_1);
 
-        imageButton9 =  findViewById(R.id.imageButton9);
-        imageButton9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                back();
-            }
-        });
+//        imageButton9 =  findViewById(R.id.imageButton9);
+//        imageButton9.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                back();
+//            }
+//        });
     }
 
-    public void back(){
-        Intent intent = new Intent(this, Booking_1.class);
-        startActivity(intent);
-    }
+//    public void back(){
+//        Intent intent = new Intent(this, Booking_1.class);
+//        startActivity(intent);
+//    }
 }

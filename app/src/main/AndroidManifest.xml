@@ -16,28 +16,73 @@
             android:name=".MainActivity17"
             android:label="@string/title_activity_main17"
             android:theme="@style/Theme.MAD.NoActionBar"></activity>
-        <activity android:name=".profile_food" />
-        <activity android:name=".add_food" />
-        <activity android:name=".order_food" />
-        <activity android:name=".recipe_food" />
-        <activity android:name=".menu_food" />
-        <activity android:name=".MainActivity11" />
-        <activity android:name=".MainActivity10" />
-        <activity android:name=".MainActivity9" />
-        <activity android:name=".MainActivity8" />
-        <activity android:name=".MainActivity7" />
-        <activity android:name=".MainActivity6" />
-        <activity android:name=".MainActivity5" />
-        <activity android:name=".MainActivity4" />
-        <activity android:name=".MainActivity3" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".register" />
-        <activity android:name=".MainButtion" />
-        <activity android:name=".Payment_1" />
-        <activity android:name=".Booking_1" />
-        <activity android:name=".View_Booking_Client" />
-        <activity android:name=".View_Booking_admin" />
-        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".profile_food"
+            android:exported="true"/>
+        <activity
+            android:name=".add_food"
+            android:exported="true"/>
+        <activity
+            android:name=".order_food"
+            android:exported="true"/>
+        <activity
+            android:name=".recipe_food"
+            android:exported="true"/>
+        <activity
+            android:name=".menu_food"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity11"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity10"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity9"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity8"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity7"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity6"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity5"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity4"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true"/>
+        <activity
+            android:name=".register"
+            android:exported="true"/>
+        <activity
+            android:name=".MainButtion"
+            android:exported="true"/>
+        <activity
+            android:name=".Payment_1"
+            android:exported="true"
+            android:parentActivityName=".Booking_1"/>
+        <activity
+            android:name=".Booking_1"
+            android:exported="true" />
+        <activity
+            android:name=".View_Booking_Client"
+            android:exported="true"/>
+        <activity
+            android:name=".View_Booking_admin"
+            android:exported="true"/>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
