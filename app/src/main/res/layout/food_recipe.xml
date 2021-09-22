@@ -10,48 +10,51 @@
         android:id="@+id/item"
         android:layout_width="232dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="336dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:hint="@string/item"
         android:textColorHint="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.465" />
 
     <TextView
         android:id="@+id/pricee"
-        android:layout_width="187dp"
-        android:layout_height="57dp"
-        android:layout_marginBottom="264dp"
+        android:layout_width="170dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="288dp"
         android:hint="@string/pricee"
         android:textColorHint="#FFC107"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/recipe"
         android:layout_width="123dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="204dp"
+        android:layout_marginBottom="228dp"
         android:hint="@string/recipe"
         android:textColorHint="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/recipedesc"
-        android:layout_width="322dp"
-        android:layout_height="87dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="96dp"
+        android:layout_width="330dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="92dp"
         android:hint="@string/recipedesc"
         android:textColorHint="#000000"
         android:textSize="16sp"
@@ -82,10 +85,11 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="400dp"
-        android:layout_height="329dp"
+        android:layout_width="406dp"
+        android:layout_height="281dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -111,6 +115,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="4dp"
         android:hint="@string/next"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
