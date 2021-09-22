@@ -49,17 +49,20 @@ public class Booking_1 extends AppCompatActivity {
             }
         });
 
-        checkin_date_input = findViewById(R.id.editTextDate);
-        chekin_time_input = findViewById(R.id.editTextTime);
-        numberof_cabin_input = findViewById(R.id.editTextNumber);
-        email_input = findViewById(R.id.editTextTextPersonName);
-        mobile_number = findViewById(R.id.editTextTextPersonName1);
+//        checkin_date_input = findViewById(R.id.editTextDate);
+        checkin_date_input = (EditText) findViewById(R.id.editTextDate);
+        chekin_time_input = (EditText) findViewById(R.id.editTextTime);
+        numberof_cabin_input = (EditText) findViewById(R.id.editTextNumber);
+        email_input = (EditText) findViewById(R.id.editTextTextPersonName);
+        mobile_number = (EditText) findViewById(R.id.editTextTextPersonName1);
+        button = (Button) findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(Booking_1.this);
-                myDB.Booking(checkin_date_input.getText().toString().trim(),
+                myDB.Booking(
+                        checkin_date_input.getText().toString().trim(),
                         chekin_time_input.getText().toString().trim(),
                         Integer.valueOf(numberof_cabin_input.getText().toString().trim()),
                         email_input.getText().toString().trim(),
