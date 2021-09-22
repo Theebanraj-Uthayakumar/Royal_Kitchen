@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity14 extends AppCompatActivity {
+public class order_food extends AppCompatActivity {
 
     TextView textView;
     TextView textView2;
@@ -15,7 +15,7 @@ public class MainActivity14 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main14);
+        setContentView(R.layout.food_order);
 
         textView =  findViewById(R.id.t8);
         textView.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +40,7 @@ public class MainActivity14 extends AppCompatActivity {
     }
 
     public void Add(){
-        Intent intent = new Intent(this, MainActivity15.class);
+        Intent intent = new Intent(this, add_food.class);
         startActivity(intent);
     }
 }
