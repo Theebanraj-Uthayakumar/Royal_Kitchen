@@ -6,11 +6,8 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-import java.time.Instant;
 import java.util.Timer;
-import java.util.TimerTask;
 
 public class HomeActivity extends AppCompatActivity {
     Timer timer;
@@ -76,7 +73,7 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void Foods(){
-        Intent intent = new Intent(this, MainActivity14.class);
+        Intent intent = new Intent(this, order_food.class);
         startActivity(intent);
     }
     public void Booking(){

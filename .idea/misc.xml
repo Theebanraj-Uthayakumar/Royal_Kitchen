@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_main12.xml" value="0.23569967713323764" />
+        <entry key="app/src/main/res/layout/activity_main13.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/activity_main14.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/activity_main15.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/activity_main16.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/food_add.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/food_menu.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/food_order.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/food_profile.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/food_recipe.xml" value="0.246875" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -269,23 +269,23 @@ public class MainButtion extends AppCompatActivity {
         startActivity(intent);
     }
     public void Abi01(){
-        Intent intent = new Intent(this, MainActivity12.class);
+        Intent intent = new Intent(this, menu_food.class);
         startActivity(intent);
     }
     public void Abi02(){
-        Intent intent = new Intent(this, MainActivity13.class);
+        Intent intent = new Intent(this, recipe_food.class);
         startActivity(intent);
     }
     public void Abi03(){
-        Intent intent = new Intent(this, MainActivity14.class);
+        Intent intent = new Intent(this, order_food.class);
         startActivity(intent);
     }
     public void Abi04(){
-        Intent intent = new Intent(this, MainActivity15.class);
+        Intent intent = new Intent(this, add_food.class);
         startActivity(intent);
     }
     public void Abi05(){
-        Intent intent = new Intent(this, MainActivity16.class);
+        Intent intent = new Intent(this, profile_food.class);
         startActivity(intent);
     }
 }
