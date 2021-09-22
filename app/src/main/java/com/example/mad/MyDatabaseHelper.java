@@ -33,16 +33,6 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-//        String query = "CREATE TABLE " + TABLE_NAME + "(" +
-//                COLUMN_ID + "INTEGER PRIMARY KEY AUTOINCREMENT, " +
-//                COLUMN_CHECK_IN_DATE + " TEXT, " +
-//                COLUMN_CHECK_IN_TIME + " TEXT, " +
-//                COLUMN_NUMBER_OF_CABINS + " INTEGER," +
-//                COLUMN_EMAIL + " TEXT, " +
-//                COLUMN_MOBILE_NUMBER + " INTEGER, " +
-//                COLUMN_DISCOUNT + " INTEGER, " +
-//                COLUMN_FARE + " INTEGER);";
-//        db.execSQL(query);
         db.execSQL("create table " + TABLE_NAME + "(COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, check_in_date TEXT, check_in_time TEXT, number_of_cabins INTEGER, email_address TEXT, mobile_number INTEGER)");
     }
 

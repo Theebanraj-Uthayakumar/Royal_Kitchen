@@ -25,13 +25,13 @@ public class Booking_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking_1);
 
-        imageButton9 =  findViewById(R.id.imageButton9);
-        imageButton9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                back();
-            }
-        });
+//        imageButton9 =  findViewById(R.id.imageButton9);
+//        imageButton9.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                back();
+//            }
+//        });
 
         button =  (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +49,6 @@ public class Booking_1 extends AppCompatActivity {
             }
         });
 
-//        checkin_date_input = findViewById(R.id.editTextDate);
         checkin_date_input = (EditText) findViewById(R.id.editTextDate);
         chekin_time_input = (EditText) findViewById(R.id.editTextTime);
         numberof_cabin_input = (EditText) findViewById(R.id.editTextNumber);
