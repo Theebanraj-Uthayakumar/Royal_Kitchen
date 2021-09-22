@@ -19,7 +19,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Booking_1">
+        tools:context=".MainActivity9">
 
         <ImageButton
             android:id="@+id/imageButton676"
