@@ -21,6 +21,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_NUMBER_OF_CABINS = "number_of_cabins";
     private static final String COLUMN_EMAIL = "email_address";
     private static final String COLUMN_MOBILE_NUMBER = "mobile_number";
+    private static final String COLUMN_CABIN_CATEGORY = "cabin_type";
     private static final String COLUMN_DISCOUNT = "discount";
     private static final String COLUMN_FARE = "fare";
 
@@ -33,7 +34,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + TABLE_NAME + "(COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, check_in_date TEXT, check_in_time TEXT, number_of_cabins INTEGER, email_address TEXT, mobile_number INTEGER)");
+        db.execSQL("create table " + TABLE_NAME + "(COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, check_in_date TEXT, check_in_time TEXT, number_of_cabins INTEGER, email_address TEXT, mobile_number INTEGER, cabin_type TEXT, discount INTEGER, fare INTEGER)");
     }
 
     @Override
@@ -42,7 +43,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    void Booking(String checkin_date, String checkin_time, int numberofcabin, String email, int number){
+    void Booking(String checkin_date, String checkin_time, String numberofcabin, String email, String number, String cabin_type, String discount, String fare){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
@@ -51,6 +52,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_NUMBER_OF_CABINS,numberofcabin);
         cv.put(COLUMN_EMAIL,email);
         cv.put(COLUMN_MOBILE_NUMBER,number);
+        cv.put(COLUMN_CABIN_CATEGORY,cabin_type);
+        cv.put(COLUMN_DISCOUNT,discount);
+        cv.put(COLUMN_FARE,fare);
 
         long result = db.insert(TABLE_NAME,null,cv);
         if(result == -1){

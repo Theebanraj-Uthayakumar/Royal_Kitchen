@@ -24,7 +24,7 @@ public class Booking_1 extends AppCompatActivity {
     //Cancel Button
     Button button8;
 
-    private  Spinner spnBrand;
+    private Spinner spnBrand;
     private EditText txtQuantity;
     private TextView txtdiscount;
     private TextView txttotal;
@@ -54,10 +54,21 @@ public class Booking_1 extends AppCompatActivity {
 //            }
 //        });
 
-        spnBrand = findViewById(R.id.spnBrand);
-        txtQuantity = findViewById(R.id.txtquantity);
-        txtdiscount = findViewById(R.id.txtdiscount);
-        txttotal  = findViewById(R.id.txttotal);
+//        spnBrand = findViewById(R.id.spnBrand);
+//        txtQuantity = findViewById(R.id.txtquantity);
+//        txtdiscount = findViewById(R.id.txtdiscount);
+//        txttotal  = findViewById(R.id.txttotal);
+
+        checkin_date_input = (EditText) findViewById(R.id.editTextDate);
+        chekin_time_input = (EditText) findViewById(R.id.editTextTime);
+        numberof_cabin_input = (EditText) findViewById(R.id.editTextNumber);
+        email_input = (EditText) findViewById(R.id.editTextTextPersonName);
+        mobile_number = (EditText) findViewById(R.id.editTextTextPersonName1);
+        spnBrand = (Spinner) findViewById(R.id.spnBrand);
+        txtQuantity = (EditText) findViewById(R.id.txtquantity);
+        txtdiscount = (TextView) findViewById(R.id.txtdiscount);
+        txttotal  = (TextView) findViewById(R.id.txttotal);
+        button = (Button) findViewById(R.id.button);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,brands);
 
@@ -140,7 +151,27 @@ public class Booking_1 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                BookNow();
+//                BookNow();
+                System.out.println(checkin_date_input.getText().toString().trim());
+                System.out.println(chekin_time_input.getText().toString().trim());
+                System.out.println(txtQuantity.getText().toString().trim());
+                System.out.println(email_input.getText().toString().trim());
+                System.out.println(mobile_number.getText().toString().trim());
+                System.out.println(spnBrand.getSelectedItem().toString());
+                System.out.println(txtdiscount.getText().toString().trim());
+                System.out.println(txttotal.getText().toString().trim());
+
+                MyDatabaseHelper myDB = new MyDatabaseHelper(Booking_1.this);
+                myDB.Booking(
+                        checkin_date_input.getText().toString().trim(),
+                        chekin_time_input.getText().toString().trim(),
+                        txtQuantity.getText().toString().trim(),
+                        email_input.getText().toString().trim(),
+                        mobile_number.getText().toString().trim(),
+                        spnBrand.getSelectedItem().toString(),
+                        txtdiscount.getText().toString().trim(),
+                        txttotal.getText().toString().trim()
+                );
             }
         });
 
@@ -149,26 +180,6 @@ public class Booking_1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Cancel();
-            }
-        });
-
-        checkin_date_input = (EditText) findViewById(R.id.editTextDate);
-        chekin_time_input = (EditText) findViewById(R.id.editTextTime);
-        numberof_cabin_input = (EditText) findViewById(R.id.editTextNumber);
-        email_input = (EditText) findViewById(R.id.editTextTextPersonName);
-        mobile_number = (EditText) findViewById(R.id.editTextTextPersonName1);
-        button = (Button) findViewById(R.id.button);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(Booking_1.this);
-                myDB.Booking(
-                        checkin_date_input.getText().toString().trim(),
-                        chekin_time_input.getText().toString().trim(),
-                        Integer.valueOf(numberof_cabin_input.getText().toString().trim()),
-                        email_input.getText().toString().trim(),
-                        Integer.valueOf(mobile_number.getText().toString().trim()));
             }
         });
     }
