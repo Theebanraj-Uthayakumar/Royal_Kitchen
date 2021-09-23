@@ -261,7 +261,7 @@ public class MainButtion extends AppCompatActivity {
         startActivity(intent);
     }
     public void jerry04(){
-        Intent intent = new Intent(this, MainActivity10.class);
+        Intent intent = new Intent(this, cabin_admin.class);
         startActivity(intent);
     }
     public void jerry05(){
