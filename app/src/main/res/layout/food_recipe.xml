@@ -7,33 +7,17 @@
     tools:context=".recipe_food">
 
     <TextView
-        android:id="@+id/item"
-        android:layout_width="232dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:hint="@string/item"
-        android:textColorHint="#000000"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.465" />
-
-    <TextView
         android:id="@+id/pricee"
         android:layout_width="170dp"
         android:layout_height="46dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginBottom="288dp"
-        android:hint="@string/pricee"
+        android:hint="@string/recprice"
         android:textColorHint="#FFC107"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/recipe"
@@ -84,18 +68,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="406dp"
-        android:layout_height="281dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/rectangle_42" />
-
-    <ImageView
         android:id="@+id/imageView11"
         android:layout_width="83dp"
         android:layout_height="56dp"
@@ -108,7 +80,7 @@
         app:srcCompat="@drawable/download" />
 
     <Button
-        android:id="@+id/next"
+        android:id="@+id/btn_25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -118,5 +90,17 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="415dp"
+        android:layout_height="365dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_477717_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

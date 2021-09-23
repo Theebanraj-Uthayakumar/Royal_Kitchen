@@ -35,7 +35,7 @@ public class order_food extends AppCompatActivity {
     }
 
     public void Back(){
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, recipe_food.class);
         startActivity(intent);
     }
 

@@ -323,7 +323,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/back"
+        android:id="@+id/bck_1"
         android:layout_width="70dp"
         android:layout_height="43dp"
         android:layout_marginStart="16dp"
@@ -336,6 +336,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/foodcard1"
         android:layout_width="125dp"
         android:layout_height="158dp"
         android:layout_marginStart="8dp"

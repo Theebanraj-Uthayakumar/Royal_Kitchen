@@ -156,4 +156,6 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="recprice">Rs.300</string>
+    <string name="btd_22">Check Now</string>
 </resources>

@@ -73,7 +73,7 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void Foods(){
-        Intent intent = new Intent(this, order_food.class);
+        Intent intent = new Intent(this, profile_food.class);
         startActivity(intent);
     }
     public void Booking(){
