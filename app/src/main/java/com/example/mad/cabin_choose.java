@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 
 public class cabin_choose extends AppCompatActivity {
-
-
+    CardView card01;
+    TextView textView1389;
 
 
     @Override
@@ -19,8 +19,30 @@ public class cabin_choose extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cabin_choose);
 
+        card01=(CardView) findViewById(R.id.card01) ;
+        card01.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {choose();}
 
 
+        });
+        textView1389 =  findViewById(R.id.textView1389);
+        textView1389.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                back7();
+            }
+        });
+
+    }
+    public void choose(){
+        Intent intent = new Intent(this, MainActivity9.class);
+        startActivity(intent);
+
+    }
+    public void back7(){
+        Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
 
     }
 }

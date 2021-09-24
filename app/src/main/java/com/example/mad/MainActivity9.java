@@ -13,6 +13,8 @@ public class MainActivity9 extends AppCompatActivity {
 
     ImageButton imageButton676;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,12 +25,13 @@ public class MainActivity9 extends AppCompatActivity {
             @Override
             public void onClick(View v) {MainActivity9();}
 
-
         });
+
 
     }
     public void MainActivity9() {
-        Intent intent = new Intent(this, cabin_admin.class);
+        Intent intent = new Intent(this, cabin_choose.class);
         startActivity(intent);
+
     }
 }
