@@ -71,6 +71,7 @@ public class HomeActivity extends AppCompatActivity {
     public void Cabin(){
         Intent intent = new Intent(this, cabin_admin.class);
         startActivity(intent);
+
     }
     public void Foods(){
         Intent intent = new Intent(this, profile_food.class);

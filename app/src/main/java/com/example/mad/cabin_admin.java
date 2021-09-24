@@ -23,7 +23,7 @@ public class cabin_admin extends AppCompatActivity {
         textView138.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                back();
+                back1();
             }
         });
 
@@ -42,7 +42,7 @@ public class cabin_admin extends AppCompatActivity {
         startActivity(intent);
 
     }
-    public void back(){
+    public void back1(){
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
 
