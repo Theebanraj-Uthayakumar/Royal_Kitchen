@@ -28,7 +28,7 @@ public class MainActivity9 extends AppCompatActivity {
 
     }
     public void MainActivity9() {
-        Intent intent = new Intent(this, cabin_choose.class);
+        Intent intent = new Intent(this, cabin_admin.class);
         startActivity(intent);
     }
 }
