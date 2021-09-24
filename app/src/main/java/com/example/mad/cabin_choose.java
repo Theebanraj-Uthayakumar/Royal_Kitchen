@@ -13,7 +13,7 @@ public class cabin_choose extends AppCompatActivity {
 
      TextView textView138;
      CardView card01;
-     CardView card04;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +36,7 @@ public class cabin_choose extends AppCompatActivity {
 
         });
 
-        card04=(CardView) findViewById(R.id.card04) ;
-        card04.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {select();}
 
-
-        });
     }
     public void cabin_choose(){
         Intent intent = new Intent(this, MainActivity9.class);
@@ -53,9 +47,6 @@ public class cabin_choose extends AppCompatActivity {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
 
-    }
-    public void select(){
-        Intent intent = new Intent(this, MainActivity9.class);
-        startActivity(intent);
+
     }
 }
