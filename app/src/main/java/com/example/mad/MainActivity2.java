@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void Cabin(){
-        Intent intent = new Intent(this, MainActivity8.class);
+        Intent intent = new Intent(this, cabin_choose.class);
         startActivity(intent);
     }
 }
