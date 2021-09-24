@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class cabin_admin extends AppCompatActivity {
@@ -13,6 +14,7 @@ public class cabin_admin extends AppCompatActivity {
 
     TextView textView138;
     CardView card01;
+    ImageButton imageButton4567;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,14 @@ public class cabin_admin extends AppCompatActivity {
 
         });
 
+        imageButton4567=(ImageButton)  findViewById(R.id.imageButton4567) ;
+        imageButton4567.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {next();}
+
+
+        });
+
 
     }
     public void cabin_admin(){
@@ -45,6 +55,12 @@ public class cabin_admin extends AppCompatActivity {
     public void back1(){
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
+
+    }
+    public void next(){
+        Intent intent = new Intent(this, MainActivity11.class);
+        startActivity(intent);
+
 
     }
 }
