@@ -158,4 +158,7 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="recprice">Rs.300</string>
     <string name="btd_22">Check Now</string>
+    <string name="btn_f1">Edit</string>
+    <string name="btn_f">Delete</string>
+
 </resources>

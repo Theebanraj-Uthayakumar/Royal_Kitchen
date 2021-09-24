@@ -7,8 +7,8 @@
     tools:context=".order_food">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="411dp"
-        android:layout_height="197dp"
+        android:layout_width="410dp"
+        android:layout_height="237dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="15dp"
         app:cardMaxElevation="12dp"
@@ -17,7 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.782">
+        app:layout_constraintVertical_bias="0.816">
 
 
         <TextView
@@ -72,46 +72,38 @@
             android:textColorHint="#000000" />
 
         <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="37dp"
-            android:layout_height="36dp"
-            android:layout_gravity="bottom|right"
-            android:layout_marginEnd="80dp"
-            android:layout_marginRight="80dp"
-            android:layout_marginBottom="10dp"
-            tools:srcCompat="@drawable/group_30" />
-
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="35dp"
-            android:layout_height="32dp"
-            android:layout_gravity="bottom|right"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            tools:srcCompat="@drawable/rectangle_54" />
-
-        <ImageView
-            android:id="@+id/imageView17"
-            android:layout_width="28dp"
-            android:layout_height="26dp"
-            android:layout_gravity="bottom|right"
-            android:layout_marginEnd="23dp"
-            android:layout_marginRight="23dp"
-            android:layout_marginBottom="12dp"
-            tools:srcCompat="@drawable/untitled" />
-
-        <ImageView
             android:id="@+id/imageView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/foodchi" />
 
+        <Button
+            android:id="@+id/btn_f2"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+
+
+            android:hint="@string/btn_f"
+            android:src="@drawable/group_30"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_f3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+
+
+            android:hint="@string/btn_f1"
+            android:src="@drawable/group_30"
+            android:textColorHint="@color/white" />
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="411dp"
-        android:layout_height="197dp"
+        android:layout_width="406dp"
+        android:layout_height="239dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="15dp"
         app:cardMaxElevation="12dp"
@@ -123,10 +115,31 @@
         app:layout_constraintVertical_bias="0.348">
 
 
+        <Button
+            android:id="@+id/btn_f1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+
+
+            android:hint="@string/btn_f1"
+            android:src="@drawable/group_30"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_f"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+
+
+            android:hint="@string/btn_f"
+            android:src="@drawable/group_30"
+            android:textColorHint="@color/white" />
 
         <TextView
             android:id="@+id/text2"
-            android:layout_width="wrap_content"
+            android:layout_width="143dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="50dp"
@@ -157,8 +170,8 @@
 
         <TextView
             android:id="@+id/text5"
-            android:layout_width="235dp"
-            android:layout_height="29dp"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
             android:layout_marginStart="150dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="90dp"
@@ -183,36 +196,6 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             app:srcCompat="@drawable/rectangle_30" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="37dp"
-            android:layout_height="30dp"
-            android:layout_gravity="bottom|right"
-            android:layout_marginEnd="80dp"
-            android:layout_marginRight="80dp"
-            android:layout_marginBottom="10dp"
-            tools:srcCompat="@drawable/group_30" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="35dp"
-            android:layout_height="32dp"
-            android:layout_gravity="bottom|right"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            tools:srcCompat="@drawable/rectangle_54" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="28dp"
-            android:layout_height="26dp"
-            android:layout_gravity="bottom|right"
-            android:layout_marginEnd="23dp"
-            android:layout_marginRight="23dp"
-            android:layout_marginBottom="12dp"
-            tools:srcCompat="@drawable/untitled" />
 
     </androidx.cardview.widget.CardView>
 
