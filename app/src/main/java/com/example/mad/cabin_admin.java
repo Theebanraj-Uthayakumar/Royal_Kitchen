@@ -13,7 +13,7 @@ public class cabin_admin extends AppCompatActivity {
 
 
     TextView textView138;
-    CardView card01;
+
     ImageButton imageButton4567;
 
     @Override
@@ -29,13 +29,8 @@ public class cabin_admin extends AppCompatActivity {
             }
         });
 
-        card01=(CardView) findViewById(R.id.card01) ;
-        card01.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {cabin_admin();}
 
 
-        });
 
         imageButton4567=(ImageButton)  findViewById(R.id.imageButton4567) ;
         imageButton4567.setOnClickListener(new View.OnClickListener() {
@@ -46,10 +41,7 @@ public class cabin_admin extends AppCompatActivity {
         });
 
 
-    }
-    public void cabin_admin(){
-        Intent intent = new Intent(this, MainActivity9.class);
-        startActivity(intent);
+
 
     }
     public void back1(){

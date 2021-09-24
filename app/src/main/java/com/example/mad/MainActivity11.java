@@ -18,13 +18,13 @@ public class MainActivity11 extends AppCompatActivity {
         imageButton67=(ImageButton)  findViewById(R.id.imageButton67);
         imageButton67.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {back2();}
+            public void onClick(View v) {back12();}
 
 
         });
 
     }
-    public void back2() {
+    public void back12() {
         Intent intent = new Intent(this, cabin_admin.class);
         startActivity(intent);
     }

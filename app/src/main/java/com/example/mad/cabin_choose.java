@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 
 public class cabin_choose extends AppCompatActivity {
-    CardView card01;
+    CardView card014;
     TextView textView1389;
 
 
@@ -19,8 +19,8 @@ public class cabin_choose extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cabin_choose);
 
-        card01=(CardView) findViewById(R.id.card01) ;
-        card01.setOnClickListener(new View.OnClickListener() {
+        card014=(CardView) findViewById(R.id.card014) ;
+        card014.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {choose();}
 
