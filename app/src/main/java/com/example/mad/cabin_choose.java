@@ -13,6 +13,7 @@ public class cabin_choose extends AppCompatActivity {
 
      TextView textView138;
      CardView card01;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,7 @@ public class cabin_choose extends AppCompatActivity {
         textView138.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cabin_choose();
+                back();
             }
         });
 
@@ -36,6 +37,11 @@ public class cabin_choose extends AppCompatActivity {
     }
     public void cabin_choose(){
         Intent intent = new Intent(this, MainActivity9.class);
+        startActivity(intent);
+
+    }
+    public void back(){
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 }
