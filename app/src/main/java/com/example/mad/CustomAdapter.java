@@ -58,6 +58,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.cnumber_txt.setText(String.valueOf(discount.get(position)));
         holder.discount_txt.setText(String.valueOf(fare.get(position)));
         holder.fare_txt.setText(String.valueOf(email.get(position)));
+        holder.email_txt.setText(String.valueOf(cnumber.get(position)));
     }
 
     @Override
@@ -74,6 +75,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             Booking_id_txt = itemView.findViewById(R.id.textView14);
             check_date_txt = itemView.findViewById(R.id.textView18);
             check_time_txt = itemView.findViewById(R.id.textView59);
+            email_txt = itemView.findViewById(R.id.textView65);
             cabin_type_txt = itemView.findViewById(R.id.textView58);
             number_of_cabin_txt = itemView.findViewById(R.id.textView57);
             cnumber_txt = itemView.findViewById(R.id.textView20);
