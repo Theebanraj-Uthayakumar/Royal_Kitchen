@@ -38,7 +38,7 @@ public class order_food extends AppCompatActivity {
         Intent intent = new Intent(this, recipe_food.class);
         startActivity(intent);
     }
-
+//Add function
     public void Add(){
         Intent intent = new Intent(this, add_food.class);
         startActivity(intent);

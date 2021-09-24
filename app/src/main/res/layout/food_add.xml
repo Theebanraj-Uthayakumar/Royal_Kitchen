@@ -87,7 +87,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/submi"
+        android:id="@+id/sub1"
         android:layout_width="199dp"
         android:layout_height="61dp"
         android:layout_marginStart="180dp"
