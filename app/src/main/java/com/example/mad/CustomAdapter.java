@@ -81,19 +81,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                 activity.startActivityForResult(intent, 1);
             }
         });
-//        holder.mainLayout.setOnClickListener((view) -> {
-//            Intent intent = new Intent(context, Update_Booking.class);
-//            intent.putExtra("id", String.valueOf(Booking_id.get(position)));
-//            intent.putExtra("checkdate", String.valueOf(check_date.get(position)));
-//            intent.putExtra("checktime", String.valueOf(check_time.get(position)));
-//            intent.putExtra("cabintype", String.valueOf(cabin_type.get(position)));
-//            intent.putExtra("numberofcabin", String.valueOf(number_of_cabin.get(position)));
-//            intent.putExtra("discount", String.valueOf(discount.get(position)));
-//            intent.putExtra("email", String.valueOf(email.get(position)));
-//            intent.putExtra("cnumber", String.valueOf(cnumber.get(position)));
-//            intent.putExtra("fare", String.valueOf(fare.get(position)));
-//            activity.startActivityForResult(intent, 1);
-//        });
     }
 
     @Override

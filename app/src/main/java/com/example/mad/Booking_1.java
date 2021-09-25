@@ -152,15 +152,6 @@ public class Booking_1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                BookNow();
-                System.out.println(checkin_date_input.getText().toString().trim());
-                System.out.println(chekin_time_input.getText().toString().trim());
-                System.out.println(txtQuantity.getText().toString().trim());
-                System.out.println(email_input.getText().toString().trim());
-                System.out.println(mobile_number.getText().toString().trim());
-                System.out.println(spnBrand.getSelectedItem().toString());
-                System.out.println(txtdiscount.getText().toString().trim());
-                System.out.println(txttotal.getText().toString().trim());
-
                 MyDatabaseHelper myDB = new MyDatabaseHelper(Booking_1.this);
                 myDB.Booking(
                         checkin_date_input.getText().toString().trim(),
@@ -172,7 +163,7 @@ public class Booking_1 extends AppCompatActivity {
                         txtdiscount.getText().toString().trim(),
                         txttotal.getText().toString().trim()
                 );
-
+                finish();
             }
         });
 

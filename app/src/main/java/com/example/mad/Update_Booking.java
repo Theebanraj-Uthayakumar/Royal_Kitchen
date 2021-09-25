@@ -98,6 +98,7 @@ public class Update_Booking extends AppCompatActivity {
             public void onClick(DialogInterface dialogInterface, int i) {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(Update_Booking.this);
                 myDB.deleteOneRow(id);
+                finish();
             }
         });
         builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
