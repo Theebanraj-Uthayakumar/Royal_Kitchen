@@ -33,10 +33,10 @@ public class Update_Booking extends AppCompatActivity {
         //First we call this
         getAndSetIntentData();
 
-        ActionBar ab = getSupportActionBar();
-        if (ab != null) {
-            ab.setTitle(e_mail);
-        }
+//        ActionBar ab = getSupportActionBar();
+//        if (ab != null) {
+//            ab.setTitle(e_mail);
+//        }
 
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
