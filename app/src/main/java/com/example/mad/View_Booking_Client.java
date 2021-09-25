@@ -1,9 +1,11 @@
 package com.example.mad;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
@@ -37,9 +39,17 @@ public class View_Booking_Client extends AppCompatActivity {
 
         storeDataInArrays();
 
-        customAdapter = new CustomAdapter(View_Booking_Client.this, Booking_id, check_date, check_time, cabin_type, number_of_cabin, email, cnumber, discount, fare);
+        customAdapter = new CustomAdapter(View_Booking_Client.this,this ,Booking_id, check_date, check_time, cabin_type, number_of_cabin, email, cnumber, discount, fare);
         recyclearView.setAdapter(customAdapter);
         recyclearView.setLayoutManager(new LinearLayoutManager(View_Booking_Client.this));
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 1){
+            recreate();
+        }
     }
 
     void storeDataInArrays(){

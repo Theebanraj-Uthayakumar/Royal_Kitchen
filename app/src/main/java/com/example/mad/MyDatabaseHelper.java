@@ -35,7 +35,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_FOOD_PRICE = "food_price";
 
 
-    public MyDatabaseHelper(@Nullable Context context) {
+    MyDatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
     }
@@ -104,6 +104,27 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
             cursor = db.rawQuery(query,null);
         }
         return cursor;
+    }
+
+    void updatedata(String booking_id, String checkin_date, String checkin_time, String numberofcabin, String email, String number, String cabin_type, String discount, String fare ){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(COLUMN_CHECK_IN_DATE,checkin_date);
+        cv.put(COLUMN_CHECK_IN_TIME,checkin_time);
+        cv.put(COLUMN_NUMBER_OF_CABINS,numberofcabin);
+        cv.put(COLUMN_EMAIL,number);
+        cv.put(COLUMN_MOBILE_NUMBER,cabin_type);
+        cv.put(COLUMN_CABIN_CATEGORY,email);
+        cv.put(COLUMN_DISCOUNT,discount);
+        cv.put(COLUMN_FARE,fare);
+
+        long result = db.update(TABLE_NAME, cv,"COLUMN_ID=?", new String[]{booking_id});
+        if (result == -1) {
+            Toast.makeText(context,"Failed to Updated", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(context,"Successfully Updated", Toast.LENGTH_SHORT).show();
+        }
     }
 }
 

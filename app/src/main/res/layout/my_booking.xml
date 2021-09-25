@@ -7,6 +7,7 @@
 
 
     <LinearLayout
+        android:id="@+id/mainLayout"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -21,7 +22,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -60,8 +62,8 @@
                 android:layout_alignLeft="@+id/textView14"
                 android:layout_alignEnd="@+id/textView14"
                 android:layout_alignRight="@+id/textView14"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginLeft="27dp"
                 android:layout_marginTop="8dp"
                 android:text="24/09/2021"
                 android:textColor="#292929"
@@ -95,8 +97,8 @@
                 android:layout_alignLeft="@+id/textView23"
                 android:layout_alignEnd="@+id/textView23"
                 android:layout_alignRight="@+id/textView23"
-                android:layout_marginStart="68dp"
-                android:layout_marginLeft="68dp"
+                android:layout_marginStart="87dp"
+                android:layout_marginLeft="87dp"
                 android:layout_marginTop="8dp"
                 android:text="29750"
                 android:textColor="#292929"
@@ -113,8 +115,8 @@
                 android:layout_alignLeft="@+id/textView14"
                 android:layout_alignEnd="@+id/textView14"
                 android:layout_alignRight="@+id/textView14"
-                android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
+                android:layout_marginStart="59dp"
+                android:layout_marginLeft="59dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="-39dp"
                 android:layout_marginRight="-39dp"
@@ -157,7 +159,7 @@
                 android:layout_marginTop="8dp"
                 android:text="03:02"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.066"
                 app:layout_constraintStart_toEndOf="@+id/textView64"
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -201,7 +203,7 @@
                 android:layout_marginTop="8dp"
                 android:text="Cabin type value"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintHorizontal_bias="0.206"
                 app:layout_constraintStart_toEndOf="@+id/textView66"
                 app:layout_constraintTop_toBottomOf="@+id/textView59" />
 

@@ -1,9 +1,12 @@
 package com.example.mad;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,8 +28,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     private ArrayList cnumber;
     private ArrayList discount;
     private ArrayList fare;
+    Activity activity;
 
-    CustomAdapter(Context context, ArrayList Booking_id, ArrayList check_date, ArrayList check_time, ArrayList cabin_type, ArrayList number_of_cabin, ArrayList email, ArrayList cnumber, ArrayList discount, ArrayList fare){
+    CustomAdapter(Activity activity, Context context, ArrayList Booking_id, ArrayList check_date, ArrayList check_time, ArrayList cabin_type, ArrayList number_of_cabin, ArrayList email, ArrayList cnumber, ArrayList discount, ArrayList fare){
+        this.activity = activity;
         this.context = context;
         this.Booking_id = Booking_id;
         this.check_date = check_date;
@@ -50,6 +55,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(@NonNull CustomAdapter.MyViewHolder holder, int position) {
+
         holder.Booking_id_txt.setText(String.valueOf(Booking_id.get(position)));
         holder.check_date_txt.setText(String.valueOf(check_date.get(position)));
         holder.check_time_txt.setText(String.valueOf(check_time.get(position)));
@@ -59,6 +65,35 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.discount_txt.setText(String.valueOf(fare.get(position)));
         holder.fare_txt.setText(String.valueOf(email.get(position)));
         holder.email_txt.setText(String.valueOf(cnumber.get(position)));
+        holder.mainLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, Update_Booking.class);
+                intent.putExtra("id", String.valueOf(Booking_id.get(position)));
+                intent.putExtra("checkdate", String.valueOf(check_date.get(position)));
+                intent.putExtra("checktime", String.valueOf(check_time.get(position)));
+                intent.putExtra("cabintype", String.valueOf(cabin_type.get(position)));
+                intent.putExtra("numberofcabin", String.valueOf(number_of_cabin.get(position)));
+                intent.putExtra("discount", String.valueOf(discount.get(position)));
+                intent.putExtra("email", String.valueOf(email.get(position)));
+                intent.putExtra("cnumber", String.valueOf(cnumber.get(position)));
+                intent.putExtra("fare", String.valueOf(fare.get(position)));
+                activity.startActivityForResult(intent, 1);
+            }
+        });
+//        holder.mainLayout.setOnClickListener((view) -> {
+//            Intent intent = new Intent(context, Update_Booking.class);
+//            intent.putExtra("id", String.valueOf(Booking_id.get(position)));
+//            intent.putExtra("checkdate", String.valueOf(check_date.get(position)));
+//            intent.putExtra("checktime", String.valueOf(check_time.get(position)));
+//            intent.putExtra("cabintype", String.valueOf(cabin_type.get(position)));
+//            intent.putExtra("numberofcabin", String.valueOf(number_of_cabin.get(position)));
+//            intent.putExtra("discount", String.valueOf(discount.get(position)));
+//            intent.putExtra("email", String.valueOf(email.get(position)));
+//            intent.putExtra("cnumber", String.valueOf(cnumber.get(position)));
+//            intent.putExtra("fare", String.valueOf(fare.get(position)));
+//            activity.startActivityForResult(intent, 1);
+//        });
     }
 
     @Override
@@ -69,6 +104,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView Booking_id_txt, check_date_txt, check_time_txt, cabin_type_txt, number_of_cabin_txt, email_txt, cnumber_txt, discount_txt, fare_txt;
+        LinearLayout mainLayout;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -81,6 +117,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             cnumber_txt = itemView.findViewById(R.id.textView20);
             discount_txt = itemView.findViewById(R.id.textView24);
             fare_txt = itemView.findViewById(R.id.textView23);
+            mainLayout = itemView.findViewById(R.id.mainLayout);
         }
     }
 }

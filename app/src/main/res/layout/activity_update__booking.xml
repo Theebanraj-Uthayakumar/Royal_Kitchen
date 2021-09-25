@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="133dp"
+    tools:layout_editor_absoluteY="185dp"
+    android:fillViewport="true"
+    android:background="@drawable/booking_back_img_1">
+
+    <!--    NEW-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Booking_1">
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/imageButton9"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentStart="true"-->
+        <!--            android:layout_alignParentLeft="true"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_marginStart="14dp"-->
+        <!--            android:layout_marginLeft="24dp"-->
+        <!--            android:layout_marginTop="17dp"-->
+        <!--            android:layout_marginEnd="310dp"-->
+        <!--            android:layout_marginRight="310dp"-->
+        <!--            app:srcCompat="@drawable/back_but" />-->
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="268dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            android:fontFamily="@font/open_sans"
+            android:freezesText="false"
+            android:text="@string/Booking_1_booking_details"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editTextDate_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView12"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="77dp"
+            android:ems="10"
+            android:hint="@string/Booking_1_check_in_date"
+            android:inputType="date"
+            android:backgroundTint="#D8A016"
+            android:textColor="#454545"
+            android:textColorHint="#454545"/>
+
+        <EditText
+            android:id="@+id/editTextTime_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextDate_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="42dp"
+            android:ems="10"
+            android:hint="@string/Booking_1_check_in_time"
+            android:inputType="time"
+            android:backgroundTint="#D8A016"
+            android:textColor="#454545"
+            android:textColorHint="#454545" />
+
+        <TextView
+            android:id="@+id/textView_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTime_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="188dp"
+            android:layout_marginRight="188dp"
+            android:width="160dp"
+            android:text="Select Brand - "
+            android:textSize="18sp" />
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spnBrand_2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/editTextTime_2"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginStart="170dp"-->
+<!--            android:layout_marginLeft="170dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginEnd="50dp"-->
+<!--            android:layout_marginRight="50dp" />-->
+
+        <EditText
+            android:id="@+id/spnBrand_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTime_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D8A016"
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="211dp"
+            android:layout_marginRight="211dp"
+            android:text="Number of Cabins :"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtquantity_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spnBrand_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D8A016"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtquantity_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:backgroundTint="#D8A016"
+            android:ems="10"
+            android:hint="@string/Booking_1_email_address"
+            android:inputType="textPersonName"
+            android:textColor="#454545"
+            android:textColorHint="#454545" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextPersonName_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:ems="10"
+            android:hint="@string/Booking_1_mobile_number"
+            android:inputType="textPersonName"
+            android:backgroundTint="#D8A016"
+            android:textColor="#454545"
+            android:textColorHint="#454545"/>
+
+        <EditText
+            android:id="@+id/txtdiscount_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextPersonName1_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:textSize="18sp"
+            android:backgroundTint="#D8A016"/>
+
+        <EditText
+            android:id="@+id/txttotal_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdiscount_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:textSize="18sp"
+            android:backgroundTint="#D8A016"/>
+
+        <TextView
+            android:id="@+id/textView32_2"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextPersonName1_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="246dp"
+            android:layout_marginRight="246dp"
+            android:text="Discount - "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView55_2"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView32_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="255dp"
+            android:layout_marginRight="255dp"
+            android:text="Fare - "
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txttotal_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:text="Update now"
+            app:backgroundTint="#D8A016" />
+
+        <Button
+            android:id="@+id/button8_2"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txttotal_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="250dp"
+            android:layout_marginRight="250dp"
+            android:text="@string/bookig_cancel"
+            app:backgroundTint="#D8A016" />
+    </RelativeLayout>
+
+</ScrollView>

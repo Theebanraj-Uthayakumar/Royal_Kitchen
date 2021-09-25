@@ -172,6 +172,7 @@ public class Booking_1 extends AppCompatActivity {
                         txtdiscount.getText().toString().trim(),
                         txttotal.getText().toString().trim()
                 );
+
             }
         });
 
