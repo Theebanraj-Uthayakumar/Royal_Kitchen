@@ -1,8 +1,10 @@
 package com.example.mad;
 
 import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +14,7 @@ import android.widget.Toast;
 public class Update_Booking extends AppCompatActivity {
 
     EditText Booking_id, check_date, check_time, cabin_type, number_of_cabin, email, cnumber, discount, fare;
-    Button update_button;
+    Button update_button, delete_button;
 
     String id, checkdate, checktime, cabintype, numberofcabin, e_mail, c_number, discount_2, fare_2;
 
@@ -30,13 +32,14 @@ public class Update_Booking extends AppCompatActivity {
         discount = findViewById(R.id.txtdiscount_2);
         fare = findViewById(R.id.txttotal_2);
         update_button = findViewById(R.id.button_2);
+        delete_button = findViewById(R.id.delete_button);
         //First we call this
         getAndSetIntentData();
 
-//        ActionBar ab = getSupportActionBar();
-//        if (ab != null) {
-//            ab.setTitle(e_mail);
-//        }
+        ActionBar ab = getSupportActionBar();
+        if (ab != null) {
+            ab.setTitle(e_mail);
+        }
 
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +47,13 @@ public class Update_Booking extends AppCompatActivity {
                 //And only then we call this
                 MyDatabaseHelper myDB = new MyDatabaseHelper(Update_Booking.this);
                 myDB.updatedata(id, checkdate, checktime, cabintype, numberofcabin, e_mail, c_number, discount_2, fare_2);
+            }
+        });
+
+        delete_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                confirmDialog();
             }
         });
     }
@@ -77,5 +87,25 @@ public class Update_Booking extends AppCompatActivity {
         }else{
             Toast.makeText(this, "No data...",Toast.LENGTH_SHORT).show();
         }
+    }
+
+    void confirmDialog(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Delete ?");
+        builder.setMessage("Are you sure you want to delete ?");
+        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                MyDatabaseHelper myDB = new MyDatabaseHelper(Update_Booking.this);
+                myDB.deleteOneRow(id);
+            }
+        });
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        builder.create().show();
     }
 }

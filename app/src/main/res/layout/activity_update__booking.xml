@@ -310,7 +310,7 @@
             app:backgroundTint="#D8A016" />
 
         <Button
-            android:id="@+id/button8_2"
+            android:id="@+id/delete_button"
             android:layout_width="134dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txttotal_2"
@@ -323,7 +323,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="250dp"
             android:layout_marginRight="250dp"
-            android:text="@string/bookig_cancel"
+            android:text="Delete"
             app:backgroundTint="#D8A016" />
     </RelativeLayout>
 

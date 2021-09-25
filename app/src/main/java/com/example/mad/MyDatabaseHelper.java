@@ -106,7 +106,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    void updatedata(String booking_id, String checkin_date, String checkin_time, String numberofcabin, String email, String number, String cabin_type, String discount, String fare ){
+    void updatedata(String Booking_id, String checkin_date, String checkin_time, String numberofcabin, String email, String number, String cabin_type, String discount, String fare ){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
@@ -119,11 +119,21 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_DISCOUNT,discount);
         cv.put(COLUMN_FARE,fare);
 
-        long result = db.update(TABLE_NAME, cv,"COLUMN_ID=?", new String[]{booking_id});
+        long result = db.update(TABLE_NAME, cv,"COLUMN_ID=?", new String[]{Booking_id});
         if (result == -1) {
             Toast.makeText(context,"Failed to Updated", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(context,"Successfully Updated", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    void deleteOneRow(String Booking_id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        long result = db.delete(TABLE_NAME, "COLUMN_ID=?", new String[]{Booking_id});
+        if (result == -1) {
+            Toast.makeText(context,"Failed to Deleted", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(context,"Successfully Deleted", Toast.LENGTH_SHORT).show();
         }
     }
 }
