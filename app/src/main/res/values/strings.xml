@@ -88,10 +88,10 @@
     <string name="login">LOGIN</string>
     <string name="add">Add</string>
     <string name="cabin">Cabin</string>
-    <string name="c.name">Cabin Name</string>
-    <string name="c.type">Cabin Type</string>
-    <string name="c.description">Cabin Description</string>
-    <string name="c.price">Cabin Price</string>
+    <string name="c.name">Cabin_name</string>
+    <string name="c.type">Cabin_type</string>
+    <string name="c.description">Cabin_description</string>
+    <string name="c.price">Cabin_price</string>
     <string name="submit">SUBMIT</string>
     <string name="num">01</string>
     <string name="c.category">Cabin Category</string>
@@ -112,6 +112,8 @@
     <string name="fare">Fare -</string>
     <string name="image">image  i used</string>
     <string name="email_include">Enter your Email</string>
+    <string name="c.ID">Cabin_ID</string>
+
 
     <!--    Abinaya-->
     <string name="desc">BIRIYANI</string>
@@ -160,5 +162,6 @@
     <string name="btd_22">Check Now</string>
     <string name="btn_f1">Edit</string>
     <string name="btn_f">Delete</string>
+
 
 </resources>
