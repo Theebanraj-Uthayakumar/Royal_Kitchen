@@ -92,120 +92,10 @@
             app:layout_constraintVertical_bias="0.555"
             tools:ignore="TextContrastCheck" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginEnd="293dp"
-            android:layout_marginRight="293dp"
-            android:layout_marginBottom="261dp"
-            android:text="@string/c.name"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.086"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.645" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="101dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="29dp"
-            android:layout_marginLeft="29dp"
-            android:layout_marginEnd="281dp"
-            android:layout_marginRight="281dp"
-            android:layout_marginBottom="166dp"
-            android:text="@string/c.type"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.093"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.703" />
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="29dp"
-            android:layout_marginLeft="29dp"
-            android:layout_marginEnd="241dp"
-            android:layout_marginRight="241dp"
-            android:layout_marginBottom="117dp"
-            android:text="@string/c.description"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.108"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.765" />
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="98dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="29dp"
-            android:layout_marginLeft="29dp"
-            android:layout_marginEnd="283dp"
-            android:layout_marginRight="283dp"
-            android:layout_marginBottom="71dp"
-            android:text="@string/c.price"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.103"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.826" />
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="98dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="31dp"
-            android:layout_marginLeft="31dp"
-            android:layout_marginEnd="281dp"
-            android:layout_marginRight="281dp"
-            android:layout_marginBottom="212dp"
-            android:text="@string/c.ID"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.103"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.826" />
 
         <Button
             android:id="@+id/button7"
@@ -231,7 +121,7 @@
             app:layout_constraintVertical_bias="0.936" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress1"
+            android:id="@+id/C.description"
             android:layout_width="314dp"
             android:layout_height="48dp"
             android:layout_alignParentStart="true"
@@ -246,6 +136,7 @@
             android:layout_marginBottom="106dp"
             android:ems="10"
             android:inputType="textEmailAddress"
+            android:hint="Cabin_description"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.257"
@@ -255,7 +146,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
-            android:id="@+id/cabin_id"
+            android:id="@+id/C.name"
             android:layout_width="314dp"
             android:layout_height="48dp"
             android:layout_alignParentStart="true"
@@ -269,6 +160,7 @@
             android:layout_marginRight="70dp"
             android:layout_marginBottom="250dp"
             android:ems="10"
+            android:hint="Cabin_name"
             android:inputType="textEmailAddress"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -279,7 +171,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress180"
+            android:id="@+id/C.ID"
             android:layout_width="314dp"
             android:layout_height="48dp"
             android:layout_alignParentStart="true"
@@ -293,6 +185,7 @@
             android:layout_marginRight="71dp"
             android:layout_marginBottom="201dp"
             android:ems="10"
+            android:hint="Cabin_ID"
             android:inputType="textEmailAddress"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -303,7 +196,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress181"
+            android:id="@+id/C.type"
             android:layout_width="314dp"
             android:layout_height="48dp"
             android:layout_alignParentStart="true"
@@ -318,6 +211,7 @@
             android:layout_marginBottom="154dp"
             android:ems="10"
             android:inputType="textEmailAddress"
+            android:hint="Cabin_type"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.257"
@@ -327,7 +221,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress182"
+            android:id="@+id/C.price"
             android:layout_width="314dp"
             android:layout_height="48dp"
             android:layout_alignParentStart="true"
@@ -342,6 +236,7 @@
             android:layout_marginBottom="58dp"
             android:ems="10"
             android:inputType="textEmailAddress"
+            android:hint="Cabin_price"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.257"
