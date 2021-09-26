@@ -18,10 +18,12 @@ public class MainActivity2 extends AppCompatActivity {
     TextView textView;
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        //text
         textView =  findViewById(R.id.textView50);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,8 +34,12 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void Cabin(){
+
         Intent intent = new Intent(this, cabin_choose.class);
+
         startActivity(intent);
 
     }
+
+
 }
