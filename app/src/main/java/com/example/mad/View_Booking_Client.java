@@ -8,7 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -19,6 +22,7 @@ public class View_Booking_Client extends AppCompatActivity {
     MyDatabaseHelper myDB;
     ArrayList<String > Booking_id, check_date, check_time, cabin_type, number_of_cabin, email, cnumber, discount, fare;
     CustomAdapter customAdapter;
+    EditText searchBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +47,34 @@ public class View_Booking_Client extends AppCompatActivity {
                 check_time, cabin_type, number_of_cabin, email, cnumber, discount, fare);
         recyclearView.setAdapter(customAdapter);
         recyclearView.setLayoutManager(new LinearLayoutManager(View_Booking_Client.this));
+
+        searchBar = findViewById(R.id.search_field);
+        searchBar.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+//                filter(s.toString());
+            }
+        });
+
     }
+
+//    private void filter(String text){
+//        ArrayList<ExampleItem> filteredList = new ArrayList<ExampleItem>();
+//
+//        for(ExampleItem item : mExampleList){
+//            if(item.get)
+//        }
+//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

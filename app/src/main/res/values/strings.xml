@@ -162,6 +162,11 @@
     <string name="btd_22">Check Now</string>
     <string name="btn_f1">Edit</string>
     <string name="btn_f">Delete</string>
+    <string name="invalid_checkindate">Please Enter a Check in Date</string>
+    <string name="invalid_checkintime">Please Enter a Check in Time</string>
+    <string name="invalid_quantity">Please Enter a Number of Cabins</string>
+    <string name="invalid_email">Please Enter a Email Address</string>
+    <string name="invalid_mobilenumber">Please Enter a Contact Number</string>
 
 
 </resources>

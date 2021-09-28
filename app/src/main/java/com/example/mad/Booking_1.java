@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,6 +16,11 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 
 public class Booking_1 extends AppCompatActivity {
 
@@ -36,10 +42,11 @@ public class Booking_1 extends AppCompatActivity {
     double totalValue;
     double discountValue;
 
-
     String selectedBrand;
 
     EditText checkin_date_input, chekin_time_input, numberof_cabin_input, email_input, mobile_number;
+
+    AwesomeValidation awesomeValidation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +66,7 @@ public class Booking_1 extends AppCompatActivity {
 //        txtdiscount = findViewById(R.id.txtdiscount);
 //        txttotal  = findViewById(R.id.txttotal);
 
+        //Assign Variable
         checkin_date_input = (EditText) findViewById(R.id.editTextDate);
         chekin_time_input = (EditText) findViewById(R.id.editTextTime);
         numberof_cabin_input = (EditText) findViewById(R.id.editTextNumber);
@@ -69,6 +77,18 @@ public class Booking_1 extends AppCompatActivity {
         txtdiscount = (TextView) findViewById(R.id.txtdiscount);
         txttotal  = (TextView) findViewById(R.id.txttotal);
         button = (Button) findViewById(R.id.button);
+
+        //Initialize Validation Style
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        //Add Validation
+        awesomeValidation.addValidation(this,R.id.editTextDate, RegexTemplate.NOT_EMPTY,R.string.invalid_checkindate);
+        awesomeValidation.addValidation(this,R.id.editTextTime, RegexTemplate.NOT_EMPTY,R.string.invalid_checkintime);
+//        awesomeValidation.addValidation(this,R.id.editTextNumber, RegexTemplate.NOT_EMPTY,R.string.invalid_checkintime);
+        awesomeValidation.addValidation(this,R.id.txtquantity, RegexTemplate.NOT_EMPTY,R.string.invalid_quantity);
+        awesomeValidation.addValidation(this,R.id.editTextTextPersonName, Patterns.EMAIL_ADDRESS,R.string.invalid_email);
+        awesomeValidation.addValidation(this,R.id.editTextTextPersonName1, Patterns.PHONE,R.string.invalid_mobilenumber);
+
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,brands);
 
@@ -151,9 +171,9 @@ public class Booking_1 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                BookNow();
-                MyDatabaseHelper myDB = new MyDatabaseHelper(Booking_1.this);
-                myDB.Booking(
+                if(awesomeValidation.validate()){
+                    MyDatabaseHelper myDB = new MyDatabaseHelper(Booking_1.this);
+                    myDB.Booking(
                         checkin_date_input.getText().toString().trim(),
                         chekin_time_input.getText().toString().trim(),
                         txtQuantity.getText().toString().trim(),
@@ -162,8 +182,11 @@ public class Booking_1 extends AppCompatActivity {
                         spnBrand.getSelectedItem().toString(),
                         txtdiscount.getText().toString().trim(),
                         txttotal.getText().toString().trim()
-                );
-                finish();
+                    );
+                    finish();
+                } else{
+                    Toast.makeText(getApplicationContext(),"Please Fill All Required",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

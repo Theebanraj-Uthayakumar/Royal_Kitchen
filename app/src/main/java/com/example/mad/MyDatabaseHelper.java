@@ -55,6 +55,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    //Cabin Booking Data Add in Database
     void Booking(String checkin_date, String checkin_time, String numberofcabin, String email,
                  String number, String cabin_type, String discount, String fare){
         SQLiteDatabase db = this.getWritableDatabase();
@@ -71,9 +72,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
         long result = db.insert(TABLE_NAME, null, cv);
         if (result == -1) {
-            Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Booking Failed...", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Your data successfully added!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Your data successfully Booked...", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -95,6 +96,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    //Cabin all data get from Database
     Cursor readAllData(){
         String query = "SELECT * FROM " + TABLE_NAME;
         SQLiteDatabase db = this.getReadableDatabase();
@@ -106,6 +108,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
+
+    //Cabin Update Function
     void updatedata(String Booking_id, String checkin_date, String checkin_time, String numberofcabin, String email, String number, String cabin_type, String discount, String fare ){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -127,6 +131,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    //Cabin Delete Function
     void deleteOneRow(String Booking_id){
         SQLiteDatabase db = this.getWritableDatabase();
         long result = db.delete(TABLE_NAME, "COLUMN_ID=?", new String[]{Booking_id});
