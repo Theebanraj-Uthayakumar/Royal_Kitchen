@@ -60,8 +60,10 @@ public class Update_Booking extends AppCompatActivity {
 
 //    && getIntent().hasExtra("cabintype")
     void getAndSetIntentData(){
-        if(getIntent().hasExtra("id") && getIntent().hasExtra("checkdate") && getIntent().hasExtra("checktime") && getIntent().hasExtra("cabintype")
-                && getIntent().hasExtra("numberofcabin") && getIntent().hasExtra("email") && getIntent().hasExtra("cnumber") && getIntent().hasExtra("discount")
+        if(getIntent().hasExtra("id") && getIntent().hasExtra("checkdate")
+                && getIntent().hasExtra("checktime") && getIntent().hasExtra("cabintype")
+                && getIntent().hasExtra("numberofcabin") && getIntent().hasExtra("email")
+                && getIntent().hasExtra("cnumber") && getIntent().hasExtra("discount")
                 && getIntent().hasExtra("fare")){
             //Getting Data from Intent
             id = getIntent().getStringExtra("id");

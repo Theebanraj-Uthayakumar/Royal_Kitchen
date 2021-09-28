@@ -39,7 +39,8 @@ public class View_Booking_Client extends AppCompatActivity {
 
         storeDataInArrays();
 
-        customAdapter = new CustomAdapter(View_Booking_Client.this,this ,Booking_id, check_date, check_time, cabin_type, number_of_cabin, email, cnumber, discount, fare);
+        customAdapter = new CustomAdapter(View_Booking_Client.this,this ,Booking_id, check_date,
+                check_time, cabin_type, number_of_cabin, email, cnumber, discount, fare);
         recyclearView.setAdapter(customAdapter);
         recyclearView.setLayoutManager(new LinearLayoutManager(View_Booking_Client.this));
     }

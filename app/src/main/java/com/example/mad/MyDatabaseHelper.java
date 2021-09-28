@@ -44,7 +44,6 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + TABLE_NAME + "(COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, check_in_date TEXT, check_in_time TEXT, number_of_cabins INTEGER, email_address TEXT, mobile_number INTEGER, cabin_type TEXT, discount INTEGER, fare INTEGER)");
-//        db.execSQL("create table " + TABLE_NAME + "(COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, check_in_date TEXT, check_in_time TEXT, number_of_cabins INTEGER, email_address TEXT, mobile_number INTEGER)");
         db.execSQL("create table " + TABLE_FOODNAME + "(COLUMN_FOODID INTEGER PRIMARY KEY AUTOINCREMENT, food_name TEXT, food_type TEXT, food_description TEXT, food_price TEXT)");
     }
 
@@ -56,7 +55,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    void Booking(String checkin_date, String checkin_time, String numberofcabin, String email, String number, String cabin_type, String discount, String fare){
+    void Booking(String checkin_date, String checkin_time, String numberofcabin, String email,
+                 String number, String cabin_type, String discount, String fare){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
@@ -121,9 +121,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
         long result = db.update(TABLE_NAME, cv,"COLUMN_ID=?", new String[]{Booking_id});
         if (result == -1) {
-            Toast.makeText(context,"Failed to Updated", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"Your data has not been Updated!", Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(context,"Successfully Updated", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"Your data has been successfully Updated!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -131,9 +131,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         long result = db.delete(TABLE_NAME, "COLUMN_ID=?", new String[]{Booking_id});
         if (result == -1) {
-            Toast.makeText(context,"Failed to Deleted", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Your data has not been deleted!", Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(context,"Successfully Deleted", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"Your data has been successfully deleted!", Toast.LENGTH_SHORT).show();
         }
     }
 }
