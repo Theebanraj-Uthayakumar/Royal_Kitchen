@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.Timer;
 
@@ -17,6 +18,7 @@ public class HomeActivity extends AppCompatActivity {
     CardView cardView03;
     CardView cardView04;
     CardView cardView05;
+    TextView textView29;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +64,13 @@ public class HomeActivity extends AppCompatActivity {
                 Employee();
             }
         });
+        textView29 =  findViewById(R.id.textView29);
+        textView29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Logout();
+            }
+        });
     }
 
     public void CabinCategory(){
@@ -78,11 +87,15 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void Booking(){
-        Intent intent = new Intent(this, View_Booking_admin.class);
+        Intent intent = new Intent(this, View_Booking_Client.class);
         startActivity(intent);
     }
     public void Employee(){
         Intent intent = new Intent(this, MainActivity5.class);
+        startActivity(intent);
+    }
+    public void Logout(){
+        Intent intent = new Intent(this, MainActivity7.class);
         startActivity(intent);
     }
 }

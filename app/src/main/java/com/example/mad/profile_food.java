@@ -7,11 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class profile_food extends AppCompatActivity {
     private Button btn_chk;
     private ImageButton img_bck;
-
+    TextView logout007;
 
 
     @Override
@@ -34,6 +35,15 @@ public class profile_food extends AppCompatActivity {
             public void onClick(View v) {backimage();}
 
 
+        });
+
+        logout007=(TextView) findViewById(R.id.textView34);
+        logout007.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(profile_food.this, MainActivity7.class);
+                startActivity(intent);
+            }
         });
 
     }

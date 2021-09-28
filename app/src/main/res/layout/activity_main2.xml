@@ -39,7 +39,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.092" />
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/nav007"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignParentStart="true"
