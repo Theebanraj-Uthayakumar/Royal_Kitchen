@@ -30,6 +30,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     private ArrayList fare;
     Activity activity;
 
+    //fetching all data from View Booking client activity
     CustomAdapter(Activity activity, Context context, ArrayList Booking_id, ArrayList check_date, ArrayList check_time, ArrayList cabin_type, ArrayList number_of_cabin, ArrayList email, ArrayList cnumber, ArrayList discount, ArrayList fare){
         this.activity = activity;
         this.context = context;

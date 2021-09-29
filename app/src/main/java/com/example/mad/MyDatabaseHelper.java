@@ -40,7 +40,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         this.context = context;
     }
 
-
+    //Table Creating
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + TABLE_NAME + "(COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, check_in_date TEXT, check_in_time TEXT, number_of_cabins INTEGER, email_address TEXT, mobile_number INTEGER, cabin_type TEXT, discount INTEGER, fare INTEGER)");
@@ -74,7 +74,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         if (result == -1) {
             Toast.makeText(context, "Booking Failed...", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Your data successfully Booked...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "You have been successfully Booked...", Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -68,13 +68,6 @@ public class View_Booking_Client extends AppCompatActivity {
 
     }
 
-//    private void filter(String text){
-//        ArrayList<ExampleItem> filteredList = new ArrayList<ExampleItem>();
-//
-//        for(ExampleItem item : mExampleList){
-//            if(item.get)
-//        }
-//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

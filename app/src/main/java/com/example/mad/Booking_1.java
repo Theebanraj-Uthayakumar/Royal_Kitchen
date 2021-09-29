@@ -106,6 +106,9 @@ public class Booking_1 extends AppCompatActivity {
             }
         });
 
+
+        //Caulation part
+        //In here we are using discount calculation
         txtQuantity.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
@@ -167,6 +170,7 @@ public class Booking_1 extends AppCompatActivity {
             }
         });
 
+        //Onclick Submit data
         button =  (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
